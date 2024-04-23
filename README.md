@@ -30,10 +30,10 @@ source("Summary_level_transPGS.R")
 
 ################Individual-level transPGS#######################
 
-######data1 is the phenotypic data for the target population, including outcome and covariates.
-######data2 is the phenotypic data for the auxiliary population, including outcome and covariates.
-######G1 is the target population genotype data (matched to 1000 Genomes Project).
-######G2 is the auxiliary population genotype data (matched to 1000 Genomes Project).
+###### data1 is the phenotypic data for the target population, including outcome and covariates.
+###### data2 is the phenotypic data for the auxiliary population, including outcome and covariates.
+###### G1 is the target population genotype data (matched to 1000 Genomes Project).
+###### G2 is the auxiliary population genotype data (matched to 1000 Genomes Project).
 
 data1 <- data.frame(fread("data1.txt"))
 data2 <- data.frame(fread("data2.txt"))
@@ -49,14 +49,14 @@ original_beta  tl_beta
 5      1.800083 1.832781
 6      2.318421 2.314352
 
-####original_beta is the effect before transfer learning
-####tl_beta is the effect after transfer learning  
+#### original_beta is the effect before transfer learning
+#### tl_beta is the effect after transfer learning  
 
 ################################Summary_level transPGS##########################
 
-######T is the GWAS summary statistics for the target and auxiliary populations, including marginal effects as well as standard errors.
-######G1 is the target population genotype data (matched to 1000 Genomes Project).
-######G2 is the auxiliary population genotype data (matched to 1000 Genomes Project).
+###### T is the GWAS summary statistics for the target and auxiliary populations, including marginal effects as well as standard errors.
+###### G1 is the target population genotype data (matched to 1000 Genomes Project).
+###### G2 is the auxiliary population genotype data (matched to 1000 Genomes Project).
 
 T <- data.frame(fread("data.txt"))
 G1 <- data.frame(fread("target_geno.txt"))
@@ -71,8 +71,8 @@ head(a1)
 5   0.180453372  5.057543e-03
 6   0.020002770  7.252739e-04
 
-####original_beta is the joint effect before transfer learning
-####tl_beta is the joint effect after transfer learning      
+#### original_beta is the joint effect before transfer learning
+#### tl_beta is the joint effect after transfer learning      
 ```
   
 # Cite
