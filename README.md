@@ -61,8 +61,8 @@ original_beta  tl_beta
 T <- data.frame(fread("data.txt"))
 G1 <- data.frame(fread("target_geno.txt"))
 G2 <- data.frame(fread("auxiliary_geno.txt"))
-a1 <- transPGS(T,G1,G2)
-head(a1)
+a2 <- transPGS(T,G1,G2)
+head(a2)
   original_beta       tl_beta
 1  -0.006349755  3.290045e-05
 2   0.076720675  5.757523e-04
