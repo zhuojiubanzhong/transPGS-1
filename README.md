@@ -29,21 +29,40 @@ sourceCpp("lmm_PXEM.cpp")
 source("Individual-level_transPGS.R")
 source("Summary_level_transPGS.R")
 
+################Individual-level_transPGS#######################
 
+######data1 is the phenotypic data for the target population, including outcome and covariates.
+######data2 is the phenotypic data for the auxiliary population, including outcome and covariates.
+######G1 is the target population genotype data (matched to 1000 Genomes Project).
+######G2 is the auxiliary population genotype data (matched to 1000 Genomes Project).
 
+data1 <- data.frame(fread("data1.txt"))
+data2 <- data.frame(fread("data2.txt"))
+G1 <- data.frame(fread("geno1.txt"))
+G2 <- data.frame(fread("geno2.txt"))
+a1 <- Individual_level_transPGS(data1, data2,G1,G2)
+head(a1)
+original_beta  tl_beta
+1      2.106475 2.082117
+2      1.961041 1.909088
+3      1.160025 1.239434
+4      2.407902 2.368119
+5      1.800083 1.832781
+6      2.318421 2.314352
 
+####original_beta is the effect before transfer learning
+####tl_beta is the effect after transfer learning  
 
-
+################################Summary_level_transPGS##########################
 
 ######T is the GWAS summary statistics for the target and auxiliary populations, including marginal effects as well as standard errors.
 ######G1 is the target population genotype data (matched to 1000 Genomes Project).
 ######G2 is the auxiliary population genotype data (matched to 1000 Genomes Project).
 
-T <- data.frame(fread("/public/home/yiyangzhu/qianyi/lipid/function/data.txt"))
-G1 <- data.frame(fread("/public/home/yiyangzhu/qianyi/lipid/function/target_geno.txt"))
-G2 <- data.frame(fread("/public/home/yiyangzhu/qianyi/lipid/function/auxiliary_geno.txt"))
+T <- data.frame(fread("data.txt"))
+G1 <- data.frame(fread("target_geno.txt"))
+G2 <- data.frame(fread("auxiliary_geno.txt"))
 a1 <- transPGS(T,G1,G2)
-
 head(a1)
   original_beta       tl_beta
 1  -0.006349755  3.290045e-05
