@@ -28,7 +28,7 @@ sourceCpp("lmm_PXEM.cpp")
 source("Individual-level_transPGS.R")
 source("Summary_level_transPGS.R")
 
-################Individual-level transPGS#######################
+################ Individual-level transPGS #######################
 
 ###### data1 is the phenotypic data for the target population, including outcome and covariates.
 ###### data2 is the phenotypic data for the auxiliary population, including outcome and covariates.
@@ -52,7 +52,7 @@ original_beta  tl_beta
 #### original_beta is the effect before transfer learning
 #### tl_beta is the effect after transfer learning  
 
-################################Summary_level transPGS##########################
+################ Summary_level transPGS #######################
 
 ###### T is the GWAS summary statistics for the target and auxiliary populations, including marginal effects as well as standard errors.
 ###### G1 is the target population genotype data (matched to 1000 Genomes Project).
