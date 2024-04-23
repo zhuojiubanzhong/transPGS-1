@@ -1,4 +1,3 @@
-# transPGS
 # transPGS：Polygenic prediction for underrepresented populations through transfer learning by utilizing shared genetic similarity shared with European populations
 
 # Introduction
