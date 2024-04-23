@@ -11,10 +11,9 @@ Alternatively, integrating existing knowledge available from EURs into non-EURs 
 similarity exists between the EUR and non-EUR populations at both SNP and gene levels. Such genetic similarity provides theoretical and biological support for trans-ethnic leveraging of EUR information into non-EUR studies.
 Currently, there are a range of trans-ethnic statistical methods that help enhance the transferability of PGS across distinct ancestral groups; however, how to optimally integrate EUR information into non-EUR genetic research remains unknown.
 
-In the machine learning filed, transfer learning is recognized as a novel technique that enables the utilization of knowledge acquired from auxiliary samples to enhance learning capability in target samples, 
-which are distinct yet related to the former (Bastani, 2021; Li, et al., 2023; Lu, et al., 2023; Pan and Yang, 2009; Tian, et al., 2022; Zhao, et al., 2022). By borrowing the idea of transfer learning,
-we propose transPGS to boost the genetic prediction accuracy in non-EUR populations by leveraging trans-ethnic genetic similarity shared with the EUR population. Theoretically, transPGS helps capture genetic information across diverse 
-ancestral populations and renders the prediction more efficiently and accurately (Figure 1).
+In the machine learning filed, transfer learning is recognized as a novel technique that enables the utilization of knowledge acquired from auxiliary samples to enhance learning capability in target samples, which are distinct yet 
+related to the former (Bastani, 2021; Li, et al., 2023; Lu, et al., 2023; Pan and Yang, 2009; Tian, et al., 2022; Zhao, et al., 2022). By borrowing the idea of transfer learning,we propose transPGS to boost the genetic prediction accuracy 
+in non-EUR populations by leveraging trans-ethnic genetic similarity shared with the EUR population. Theoretically, transPGS helps capture genetic information across diverse ancestral populations and renders the prediction more efficiently and accurately.
 
 # Example
 ```ruby
