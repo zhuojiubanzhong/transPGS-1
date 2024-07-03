@@ -76,7 +76,7 @@ head(a2)
 ```
   
 # Cite
-Yiyang Zhu<sup>$</sup>, Wenying Chen<sup>$</sup> , Kexuan Zhu<sup>$</sup> and Ping Zeng<sup>#</sup> (2024). Polygenic prediction for underrepresented populations through transfer learning by utilizing shared genetic similarity shared with European populations.
+Yiyang Zhu<sup>$</sup>, Wenying Chen<sup>$</sup> , Kexuan Zhu and Ping Zeng<sup>#</sup> (2024). Polygenic prediction for underrepresented populations through transfer learning by utilizing shared genetic similarity shared with European populations.
 
 # Contact
 We are very grateful to any questions, comments, or bugs reports; and please contact Ping Zeng via zpstat@xzhmu.edu.cn.
