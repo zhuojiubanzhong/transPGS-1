@@ -25,7 +25,7 @@ library(Rcpp)
 library(RcppArmadillo)
 library(doParallel)
 sourceCpp("lmm_PXEM.cpp")
-source("Individual-level_transPGS.R")
+source("Individual_level_transPGS.R")
 source("Summary_level_transPGS.R")
 
 ################ Individual-level transPGS #######################
@@ -61,22 +61,22 @@ original_beta  tl_beta
 T <- data.frame(fread("data.txt"))
 G1 <- data.frame(fread("target_geno.txt"))
 G2 <- data.frame(fread("auxiliary_geno.txt"))
-a2 <- transPGS(T,G1,G2)
+a2 <- Summary_level_transPGS(T,G1,G2)
 head(a2)
-  original_beta       tl_beta
-1  -0.006349755  3.290045e-05
-2   0.076720675  5.757523e-04
-3  -0.060972709 -6.377691e-04
-4  -0.057363847 -3.953829e-03
-5   0.180453372  5.057543e-03
-6   0.020002770  7.252739e-04
+original_beta       tl_beta
+1  -0.006349755  7.184822e-05
+2   0.076720675  7.535035e-04
+3  -0.060972709 -8.408893e-04
+4  -0.057363847 -5.025467e-03
+5   0.180453372  6.443220e-03
+6   0.020002770  9.011636e-04
 
 #### original_beta is the joint effect before transfer learning
 #### tl_beta is the joint effect after transfer learning      
 ```
   
 # Cite
-Yiyang Zhu<sup>$</sup>, Wenying Chen<sup>$</sup> , Kexuan Zhu<sup>$</sup> and Ping Zeng<sup>#</sup> (2024). Polygenic prediction for underrepresented populations through transfer learning by utilizing shared genetic similarity shared with European populations.
+Yiyang Zhu<sup>$</sup>, Wenying Chen<sup>$</sup> , Kexuan Zhu and Ping Zeng<sup>#</sup> (2024). Polygenic prediction for underrepresented populations through transfer learning by utilizing shared genetic similarity shared with European populations.
 
 # Contact
 We are very grateful to any questions, comments, or bugs reports; and please contact Ping Zeng via zpstat@xzhmu.edu.cn.
