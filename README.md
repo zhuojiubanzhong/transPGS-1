@@ -25,7 +25,7 @@ library(Rcpp)
 library(RcppArmadillo)
 library(doParallel)
 sourceCpp("lmm_PXEM.cpp")
-source("Individual-level_transPGS.R")
+source("Individual_level_transPGS.R")
 source("Summary_level_transPGS.R")
 
 ################ Individual-level transPGS #######################
