@@ -63,13 +63,13 @@ G1 <- data.frame(fread("target_geno.txt"))
 G2 <- data.frame(fread("auxiliary_geno.txt"))
 a2 <- Summary_level_transPGS(T,G1,G2)
 head(a2)
-original_beta       tl_beta
-1  -0.006349755  7.184822e-05
-2   0.076720675  7.535035e-04
-3  -0.060972709 -8.408893e-04
-4  -0.057363847 -5.025467e-03
-5   0.180453372  6.443220e-03
-6   0.020002770  9.011636e-04
+original_beta      tl_beta
+1   -0.05005137  0.015091193
+2    0.09789231  0.021784294
+3   -0.08230863 -0.009494420
+4   -0.05116747 -0.006389153
+5    0.26905642  0.007526012
+6    0.02256624 -0.008591966
 
 #### original_beta is the joint effect before transfer learning
 #### tl_beta is the joint effect after transfer learning      
